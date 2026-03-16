@@ -1,0 +1,112 @@
+/* ===== RESPONSIVE ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* Ajustes para el logo derecho en tablets */
+    .logo-derecho {
+        right: 15px;
+        top: 12px;
+    }
+    
+    .logo-imagen {
+        height: 40px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 15px;
+    }
+    
+    .btn-contacto {
+        margin-top: 15px;
+    }
+    
+    .hero {
+        padding: 150px 0 80px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    /* Ocultar logo derecho en móviles si es necesario */
+    .logo-derecho {
+        display: none;
+    }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .estadisticas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-hero {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 400px) {
+    .estadisticas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .elegirnos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .redes-sociales {
+        justify-content: center;
+    }
+}
